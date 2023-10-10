@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="miBoton2">Haz clixk para cambiar el texto</button>
+    <p id="contadorClicks">Texto original</p>
+    <script>
+        const miBoton2 = document.getElementById("miBoton2");
+        const contadorClicks = document.getElementById("contadorClicks");
+
+        let clicks = 0;
+        miBoton2.addEventListener("click", function(){
+            clicks++;
+            contadorClicks.textContent = `clicks: ${clicks}`
+        });
+    </script>
+</body>
+</html>

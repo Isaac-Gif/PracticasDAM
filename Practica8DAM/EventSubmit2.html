@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="miFormulario1">
+        <input type="text" id="nombre2" placeholder="Nombre:">
+        <input type="email" id="correo2" placeholder="Correo Electronico:">
+        <button type="submit">Enviar</button>
+    </form>
+    <script>
+        const formulario2 = document.getElementById("miFormulario2");
+
+        formulario2.addEventListener("submit", function(event){
+            event.preventDefault();
+
+            const nombre1 = document.getElementById("nombre2").value;
+            const correo1 = document.getElementById("correo2").value;
+
+            setTimeout (function(){
+                alert("Formulario enviado con exito");
+            }, 1000);
+
+        });
+    </script>
+</body>
+</html>

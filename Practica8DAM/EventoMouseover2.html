@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="miDiv1">Pasa el raton sobre mi</div>
+    <script>
+        const miDiv2 = document.getElementById("miDiv2");
+        const contadorMouseover = document.getElementById("contadorMouseover");
+
+        let conteoMouseover = 0;
+        miDiv2.addEventListener("mouseover", function(){
+            contadorMouseover++;
+            contadorMouseover.textContent = `Contador: ${conteoMouseover}`
+        });
+
+    </script>
+</body>
+</html>
